@@ -38,6 +38,7 @@ public class Main {
             }
         }
     }
+
     public static void menu(Queue<Talon> queue){
         System.out.println(STR."""
                 0. exit
@@ -47,14 +48,5 @@ public class Main {
                 4. вызов
                 \{queue}
                 """);
-    }
-
-
-
-    public static String method(String str, String object){
-        if (!object.equalsIgnoreCase(str) && object.endsWith("@gmail.com") && object.length() >= 11){
-            return "1";
-        }
-        return "0";
     }
 }
